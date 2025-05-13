@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#sidebar {
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 250px 3fr;
+  height: 100%;
+}
+
+.task-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 20px 9fr;
+}
+
+.task-checkbox input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+}
+
+.task-content {
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: 'text info';
+}
+
+.task-text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+}
